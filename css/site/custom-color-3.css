@@ -1,0 +1,100 @@
+.text-primary {
+  color: #e1201d !important;
+}
+.text-secondary {
+  color: #7e7e7e !important;
+}
+.text-success {
+  color: #f7ed4a !important;
+}
+.text-info {
+  color: #82786e !important;
+}
+.text-warning {
+  color: #879a9f !important;
+}
+.text-danger {
+  color: var(--cadetblue) !important;
+}
+.text-white {
+  color: #ffffff !important;
+}
+.text-black {
+  color: #101010 !important;
+}
+a.text-primary:hover,
+a.text-primary:focus {
+  color: #871311 !important;
+}
+a.text-secondary:hover,
+a.text-secondary:focus {
+  color: #4b4b4b !important;
+}
+a.text-success:hover,
+a.text-success:focus {
+  color: #d2c609 !important;
+}
+a.text-info:hover,
+a.text-info:focus {
+  color: #4b453f !important;
+}
+a.text-warning:hover,
+a.text-warning:focus {
+  color: #55666b !important;
+}
+a.text-danger:hover,
+a.text-danger:focus {
+  color: var(--cadetblue) !important;
+}
+a.text-white:hover,
+a.text-white:focus {
+  color: #ffffff !important;
+}
+.alert-success {
+  background-color: #70c770;
+}
+.alert-info {
+  background-color: #82786e;
+}
+.alert-warning {
+  background-color: #879a9f;
+}
+.alert-danger {
+  background-color: var(--cadetblue);
+}
+/* .custom-section-btn a.btn:not(.btn-form):hover,
+.custom-section-btn a.btn:not(.btn-form):focus {
+  box-shadow: none !important;
+} */
+.custom-gallery-filter li.active .btn {
+  background-color: #e1201d;
+  border-color: #e1201d;
+  color: #ffffff;
+}
+.custom-gallery-filter li.active .btn:focus {
+  box-shadow: none;
+}
+a,
+a:hover {
+  color: #e1201d;
+}
+.custom-plan-header.bg-primary .custom-plan-subtitle,
+.custom-plan-header.bg-primary .custom-plan-price-desc {
+  color: #f9d2d1;
+}
+.custom-plan-header.bg-success .custom-plan-subtitle,
+.custom-plan-header.bg-success .custom-plan-price-desc {
+  color: #ffffff;
+}
+.custom-plan-header.bg-info .custom-plan-subtitle,
+.custom-plan-header.bg-info .custom-plan-price-desc {
+  color: #beb8b2;
+}
+.custom-plan-header.bg-warning .custom-plan-subtitle,
+.custom-plan-header.bg-warning .custom-plan-price-desc {
+  color: #ced6d8;
+}
+.custom-plan-header.bg-danger .custom-plan-subtitle,
+.custom-plan-header.bg-danger .custom-plan-price-desc {
+  color: #ffffff;
+}

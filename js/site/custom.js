@@ -1,4 +1,8 @@
 (function ($) {
+  console.log(
+    "%c KKS ",
+    "font-weight: bold; font-size: 50px;color: #ccc; text-shadow: 1px 1px 0 rgb(187 31 217 / 34%), 2px 2px 0 rgb(226 91 14 / 29%), 3px 3px 0 rgb(245 221 8 / 76%), 4px 4px 0 rgb(5 148 68 / 43%), 5px 5px 0 rgb(2 135 206 / 42%), 6px 6px 0 rgb(4 77 145 / 41%), 7px 7px 0 rgb(42 21 113 / 31%)"
+  );
   $("body").hide();
   $.getJSON("../../assets/json/header.json", function (data) {
     const { logo, navBar, slider } = data?.header;
@@ -11,6 +15,7 @@
     );
     /* Nav bar */
     var $menu = $("#navbarSupportedContent ul");
+    var $menuScroll = $("#navbarSupportedContentScroll ul");
     for (var item in navBar) {
       var _menu = "";
       var _submenuNavBar = navBar[item];
@@ -40,6 +45,7 @@
       </li>`;
       }
       $menu.append(_menu);
+      $menuScroll.append(_menu);
     }
     /* Nav bar */
     /* Slider */
@@ -47,7 +53,7 @@
     if (slider.length > 0) {
       var _slider = "";
       for (var item in slider) {
-        console.log(slider[item]);
+        // console.log(slider[item]);
         _slider += `<div class="row ${slider[item].className}-data">
                 <div class="custom-white col-md-12 col-lg-12 block-title">
                     <div class="line line-title-big"></div>
@@ -58,10 +64,9 @@
                 </div>
             </div>`;
       }
-      console.log(_slider);
+      // console.log(_slider);
     }
     $slider.prepend(_slider);
-
     /* Slider */
     $("body").show();
   }).fail(function () {
@@ -88,4 +93,47 @@
         .fadeIn(1000);
     }
   }, 5000);
+  /* back to top */
+  $(window).scroll(function () {
+    let bodyOffHt = document.body.offsetHeight;
+    let docScrollPos = document.documentElement.scrollTop;
+    if (bodyOffHt / 2 < docScrollPos) {
+      $("#back-to-top").addClass("active");
+    } else {
+      $("#back-to-top").removeClass("active");
+    }
+  });
+  $("#back-to-top").on("click", () => {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      800
+    );
+  });
+
+  /* Active on scroll bar */
+  let mainNavLinks = document.getElementsByClassName("nav-link");
+  let mainSections = document.querySelectorAll("section");
+
+  let lastId;
+  let cur = [];
+
+  window.addEventListener("scroll", (event) => {
+    let fromTop = window.scrollY;
+
+    $(".nav-link").each((index, link) => {
+      let section = document.querySelector(link.hash);
+
+      if (
+        section.offsetTop <= fromTop &&
+        section.offsetTop + section.offsetHeight > fromTop
+      ) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  });
+  /* Active on scroll bar */
 })(jQuery);

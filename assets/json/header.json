@@ -5,26 +5,11 @@
             "logoPath": "https://www.w3schools.com/howto/img_avatar2.png"
         },
         "navBar": {
-            "Home":
-                {"link": "/home"},
-            "About us":
-                [
-                    {  "type": "Web Design", "link" : "https://www.google.com" },
-                    {  "type": "Digital Marketing", "link" : "https://www.google.com" },
-                    {  "type": "Creative Studies", "link" : "https://www.google.com" }
-                ],
-            "Services":
-                [
-                    {"type":"Headers / Counters", "link": ""},
-                    {"type":"Features / Info", "link": ""},
-                    {"type":"content", "link": ""},
-                    {"type":"Image / Video", "link": ""},
-                    {"type":"Contact / Team", "link": ""},
-                    {"type":"Contacts / Sliders", "link": ""}
-                ],
-            "More":
-                {"link": "/buy-now.html"}
-        
+            "Home": {"link": "#custom-id-nav"},
+            "Services": {"link": "#custom-id-service"},
+            "About us": {"link": "#custom-id-about"},
+            "Work process": {"link": "#custom-id-work"},
+            "Show case": {"link": "#custom-id-show-case"}
         },
         "slider": [
             {
