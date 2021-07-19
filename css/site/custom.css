@@ -28,6 +28,19 @@
 .custom-id-nav .nav-link:focus {
   outline: none;
 }
+.logo-rest,
+.logo-top {
+  display: none;
+}
+.navbar:not(.navbar-short) .logo-top {
+  display: inline-block;
+}
+.navbar.navbar-short .logo-rest {
+  display: inline-block;
+}
+.navbar-scroll {
+  display: none;
+}
 .custom-id-nav .dropdown .dropdown-menu .dropdown-item {
   width: auto;
   -webkit-transition: all 0.25s ease-in-out;
@@ -148,6 +161,13 @@
   }
   .custom-id-nav .navbar ul.navbar-nav li {
     margin: auto;
+    border-bottom: 1px solid #609da0;
+    width: 100%;
+  }
+
+  .custom-id-nav .navbar.navbar-short ul.navbar-nav li {
+    border-bottom: 1px solid #fff;
+    width: 100%;
   }
   .custom-id-nav .navbar .dropdown-menu .dropdown-item {
     padding: 0.25rem 1.5rem !important;

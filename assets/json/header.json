@@ -2,7 +2,8 @@
     "header": {
         "logo": {
             "text": "Testimonials",
-            "logoPath": "../assets/images/logo.png"
+            "logoPath": "../assets/images/logo.png",
+            "logoPath1": "../assets/images/logo1.png"
         },
         "navBar": {
             "Home": {"link": "#custom-id-nav"},

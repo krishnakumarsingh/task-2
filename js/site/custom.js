@@ -11,7 +11,11 @@
     $logo.append(
       `<a class="navbar-caption text-white display-2" href="/index.html" ctrl=${
         logo.text
-      }>${!logo.logoPath ? logo.text : `<img src=${logo.logoPath} />`}</a>`
+      }>${
+        !logo.logoPath
+          ? logo.text
+          : `<img class="logo-top" src=${logo.logoPath} /><img class="logo-rest" src=${logo.logoPath1} />`
+      }</a>`
     );
     /* Nav bar */
     var $menu = $("#navbarSupportedContent ul");
