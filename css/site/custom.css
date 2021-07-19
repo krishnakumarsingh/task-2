@@ -926,7 +926,8 @@
 /* Custom About */
 .custom-id-work,
 .custom-id-show-case,
-.custom-id-about {
+.custom-id-about,
+.custom-id-contact-us {
   padding-top: 90px;
   padding-bottom: 0px;
   background-color: #ffffff;
@@ -934,19 +935,22 @@
 @media (max-width: 767px) {
   .custom-id-show-case h2,
   .custom-id-work h2,
-  .custom-id-about h2 {
+  .custom-id-about h2,
+  .custom-id-contact-us h2 {
     margin-bottom: 1rem;
   }
 }
 @media (min-width: 767px) {
   .custom-id-show-case .container,
   .custom-id-work .container,
-  .custom-id-about .container {
+  .custom-id-about .container,
+  .custom-id-contact-us .container {
     position: relative;
   }
   .custom-id-show-case .row,
   .custom-id-work .row,
-  .custom-id-about .row {
+  .custom-id-about .row,
+  .custom-id-contact-us .row {
     margin: 0;
   }
   .custom-id-show-case h2,
@@ -1425,6 +1429,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 0;
   margin-bottom: 0;
 }
@@ -1977,3 +1982,104 @@
   }
 }
 /* nav-scroll */
+/* container-map */
+#custom-id-contact-us {
+
+}
+#contact3-h {
+  background-color: #fff;
+  padding: 4rem 0;
+}
+#contact3-h .container-map {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+#contact3-h .md-form {
+  position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+#contact3-h .form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+#contact3-h .md-form .form-control {
+  height: auto;
+  padding: .6rem 0 .4rem .8rem;
+  margin: 0 0 .5rem 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+#contact3-h .md-form .form-control {
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+#contact3-h .md-form input,
+#contact3-h .md-form textarea {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+#contact3-h label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+#contact3-h .md-form label {
+  font-size: 1rem;
+}
+#contact3-h .md-form label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1rem;
+  color: #757575;
+  cursor: text;
+  -webkit-transition: color .2s ease-out,-webkit-transform .2s ease-out;
+  transition: color .2s ease-out,-webkit-transform .2s ease-out;
+  transition: transform .2s ease-out,color .2s ease-out;
+  transition: transform .2s ease-out,color .2s ease-out,-webkit-transform .2s ease-out;
+  -webkit-transform: translateY(12px);
+  transform: translateY(12px);
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+#contact3-h .md-form>label {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#contact3-h .md-form input:focus,
+#contact3-h .md-form textarea:focus {
+  border-bottom: 1px solid #4285f4;
+}
+#contact3-h .md-form input:focus + label,
+#contact3-h .md-form textarea:focus + label,
+#contact3-h .md-form input.active + label,
+#contact3-h .md-form textarea.active + label {
+  font-size: 1rem;
+  -webkit-transform: translateY(-14px) scale(0.8);
+  transform: translateY(-14px) scale(0.8);
+}
+/* container-map */

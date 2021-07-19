@@ -136,4 +136,7 @@
     });
   });
   /* Active on scroll bar */
+  $("form input, form textarea").on("change", function () {
+    if ($(this).val() !== "") $(this).addClass("active");
+  });
 })(jQuery);

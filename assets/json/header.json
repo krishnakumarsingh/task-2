@@ -2,7 +2,7 @@
     "header": {
         "logo": {
             "text": "Testimonials",
-            "logoPath": "https://www.w3schools.com/howto/img_avatar2.png"
+            "logoPath": "../assets/images/logo.png"
         },
         "navBar": {
             "Home": {"link": "#custom-id-nav"},
