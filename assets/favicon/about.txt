@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Delius
+- Font Author: Copyright (c) 2010 by Natalia Raices. All rights reserved.
+- Font Source: http://fonts.gstatic.com/s/delius/v10/PN_xRfK0pW_9e1rtYcI-jT3L_w.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL)

@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap);
+/* @import url(./style.css); */
 @import url(./custom-color-variable.css);
 @import url(./custom-display-1.css);
 @import url(./custom-button-2.css);
@@ -32,11 +33,16 @@
 .logo-top {
   display: none;
 }
-.navbar:not(.navbar-short) .logo-top {
+.navbar:not(.navbar-short) .logo-top,
+.navbar:not(.navbar-short--fix) .logo-top {
   display: inline-block;
 }
-.navbar.navbar-short .logo-rest {
+.navbar.navbar-short .logo-rest,
+.navbar.navbar-short--fix .logo-rest {
   display: inline-block;
+}
+.navbar.navbar-short .logo-top {
+  display: none;
 }
 .navbar-scroll {
   display: none;
@@ -165,7 +171,8 @@
     width: 100%;
   }
 
-  .custom-id-nav .navbar.navbar-short ul.navbar-nav li {
+  .custom-id-nav .navbar.navbar-short ul.navbar-nav li,
+  .custom-id-nav .navbar.navbar-short--fix ul.navbar-nav li {
     border-bottom: 1px solid #fff;
     width: 100%;
   }
@@ -189,18 +196,22 @@
     padding-bottom: 0.5rem;
   }
 }
-.custom-id-nav .navbar.navbar-short {
+.custom-id-nav .navbar.navbar-short,
+.custom-id-nav .navbar.navbar-short--fix {
   background: var(--navbar) !important;
   min-height: 60px;
   opacity: 0.9;
 }
-.custom-id-nav .navbar.navbar-short .navbar-logo img {
+.custom-id-nav .navbar.navbar-short .navbar-logo img,
+.custom-id-nav .navbar.navbar-short--fix .navbar-logo img {
   height: 3rem !important;
 }
-.custom-id-nav .navbar.navbar-short .navbar-brand {
+.custom-id-nav .navbar.navbar-short .navbar-brand,
+.custom-id-nav .navbar.navbar-short--fix .navbar-brand {
   padding: 0;
 }
-.custom-id-nav .navbar-short {
+.custom-id-nav .navbar-short,
+.custom-id-nav .navbar-short--fix {
   padding: 1rem 0 !important;
 }
 .custom-id-nav .navbar-brand {
@@ -401,7 +412,8 @@
   width: 20px;
   background-color: var(--cadetblue);
 }
-.custom-id-nav .navbar-short a.nav-link.active::before {
+.custom-id-nav .navbar-short a.nav-link.active::before,
+.custom-id-nav .navbar-short--fix a.nav-link.active::before {
   background-color: #ffffff;
 }
 .custom-id-nav .nav-link {
@@ -494,6 +506,11 @@
 }
 .custom-id-slider .custom-section-title {
   margin-bottom: 1.5rem;
+}
+.custom-id-slider .custom-section-title .txt-title-slider {
+  font-size: 1.5rem;
+  margin-top: 18px;
+  letter-spacing: 1px;
 }
 @media (max-width: 767px) {
   .custom-id-slider .card {
@@ -801,6 +818,7 @@
 }
 .custom-id-service .text-link {
   font-weight: 800 !important;
+  font-size: 1rem;
 }
 .custom-id-service .card-inner {
   width: 100%;
@@ -1486,7 +1504,7 @@
   width: 60px;
   background-color: var(--cadetblue);
 }
-.custom-copyright-section .mbr-text {
+.custom-copyright-section .custom-text {
   color: #747474;
 }
 @media (max-width: 992px) {
@@ -1676,27 +1694,34 @@
 .navbar-dropdown.bg-color.transparent {
   background: none;
 }
-.navbar-dropdown.navbar-short .navbar-brand {
+.navbar-dropdown.navbar-short .navbar-brand,
+.navbar-dropdown.navbar-short--fix .navbar-brand {
   padding: 0.625rem 0;
 }
-.navbar-dropdown.navbar-short .navbar-brand span {
+.navbar-dropdown.navbar-short .navbar-brand span,
+.navbar-dropdown.navbar-short--fix .navbar-brand span {
   vertical-align: -1px;
 }
-.navbar-dropdown.navbar-short .navbar-caption {
+.navbar-dropdown.navbar-short .navbar-caption,
+.navbar-dropdown.navbar-short--fix .navbar-caption {
   line-height: 2.375rem !important;
   vertical-align: -2px;
 }
-.navbar-dropdown.navbar-short .navbar-logo {
+.navbar-dropdown.navbar-short .navbar-logo,
+.navbar-dropdown.navbar-short--fix .navbar-logo {
   margin-right: 0.5rem;
 }
-.navbar-dropdown.navbar-short .navbar-logo img {
+.navbar-dropdown.navbar-short .navbar-logo img,
+.navbar-dropdown.navbar-short--fix .navbar-logo img {
   height: 2.375rem;
 }
-.navbar-dropdown.navbar-short .navbar-logo.mbr-iconfont {
+.navbar-dropdown.navbar-short .navbar-logo.mbr-iconfont,
+.navbar-dropdown.navbar-short--fix .navbar-logo.mbr-iconfont {
   font-size: 2.375rem;
   line-height: 2.375rem;
 }
-.navbar-dropdown.navbar-short .mbr-table-cell {
+.navbar-dropdown.navbar-short .mbr-table-cell,
+.navbar-dropdown.navbar-short--fix .mbr-table-cell {
   height: 3.625rem;
 }
 .navbar-dropdown .navbar-close {
@@ -2103,3 +2128,6 @@
   transform: translateY(-14px) scale(0.8);
 }
 /* container-map */
+section .page-section {
+  background: transparent;
+}

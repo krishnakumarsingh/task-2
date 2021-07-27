@@ -8,13 +8,18 @@
     const { logo, navBar, slider } = data?.header;
     /* Logo */
     var $logo = $("#logo");
+    var _indexPage =
+      window.location.pathname === "/" ||
+      window.location.pathname === "/index.html";
     $logo.append(
       `<a class="navbar-caption text-white display-2" href="/index.html" ctrl=${
         logo.text
       }>${
         !logo.logoPath
           ? logo.text
-          : `<img class="logo-top" src=${logo.logoPath} /><img class="logo-rest" src=${logo.logoPath1} />`
+          : `${
+              _indexPage ? `<img class="logo-top" src=${logo.logoPath} />` : ""
+            }<img class="logo-rest" src=${logo.logoPath1} />`
       }</a>`
     );
     /* Nav bar */
@@ -43,8 +48,10 @@
         </li>`;
       } else if (!Array.isArray(_submenuNavBar)) {
         _menu = `<li class='nav-item'>
-          <a class='nav-link link text-white display-4' href=${_submenuNavBar.link}>
-              ${item}
+          <a class='nav-link link text-white display-4' href=${
+            !_indexPage ? "/" : ""
+          }${_submenuNavBar.link}>
+            ${item}
           </a>
       </li>`;
       }

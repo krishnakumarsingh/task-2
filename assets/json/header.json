@@ -15,17 +15,17 @@
         "slider": [
             {
                 "className": "slider-1",
-                "sliderText": "Website slider 1 text",
+                "sliderText": "Buying Center ?",
                 "button": {"text":"Get Started", "href": "/slider-1-url"}
             },
             {
                 "className": "slider-2",
-                "sliderText": "Website slider 2 text",
+                "sliderText": "Data Quality ?<br/><p class='txt-title-slider'>While many organizations boast of having good data or improving the quality of their data, we believe customer's data should be properly oriented, shorted & simplified.</p>",
                 "button": {"text":"Get Started", "href": "/slider-2-url"}
             },
             {
                 "className": "slider-3",
-                "sliderText": "Website slider 3 text",
+                "sliderText": "Web Development",
                 "button": {"text":"Get Started", "href": "/slider-3-url"}
             }
         ]
