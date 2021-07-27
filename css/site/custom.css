@@ -2131,3 +2131,8 @@
 section .page-section {
   background: transparent;
 }
+.fixed-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
