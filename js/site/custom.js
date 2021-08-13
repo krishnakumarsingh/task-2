@@ -1,7 +1,7 @@
 (function ($) {
   console.log(
     "%c KKS ",
-    "font-weight: bold; font-size: 50px;color: #ccc; text-shadow: 1px 1px 0 rgb(187 31 217 / 34%), 2px 2px 0 rgb(226 91 14 / 29%), 3px 3px 0 rgb(245 221 8 / 76%), 4px 4px 0 rgb(5 148 68 / 43%), 5px 5px 0 rgb(2 135 206 / 42%), 6px 6px 0 rgb(4 77 145 / 41%), 7px 7px 0 rgb(42 21 113 / 31%)"
+    "font-weight: bold; font-size: 8px;color: #ccc; text-shadow: 1px 1px 0 rgb(187 31 217 / 34%), 2px 2px 0 rgb(226 91 14 / 29%), 3px 3px 0 rgb(245 221 8 / 76%), 4px 4px 0 rgb(5 148 68 / 43%), 5px 5px 0 rgb(2 135 206 / 42%), 6px 6px 0 rgb(4 77 145 / 41%), 7px 7px 0 rgb(42 21 113 / 31%)"
   );
   $("body").hide();
   $.getJSON("../../assets/json/header.json", function (data) {
