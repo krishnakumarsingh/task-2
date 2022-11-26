@@ -1436,6 +1436,9 @@
 .custom-about-clients .row {
   justify-content: center;
 }
+/* .custom-about-clients .card-box {
+  display: flex;
+} */
 @media (max-width: 992px) {
   .custom-about-clients .card {
     margin-bottom: 1rem;
@@ -2135,4 +2138,7 @@ section .page-section {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+.custom-id-show-case-carousel .img-block .title-block {
+  display: none;
 }
