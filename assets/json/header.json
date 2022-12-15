@@ -9,7 +9,7 @@
             "Home": {"link": "#custom-id-nav"},
             "Services": {"link": "#custom-id-service"},
             "About us": {"link": "#custom-id-about"},
-            "Work process": {"link": "#custom-id-work"},
+            "Contact us": {"link": "#custom-id-contact-us"},
             "Show case": {"link": "#custom-id-show-case"}
         },
         "slider": [

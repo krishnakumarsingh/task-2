@@ -25,6 +25,9 @@
   -moz-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
+html {
+  scroll-behavior: smooth;
+}
 .custom-id-nav .nav-item:focus,
 .custom-id-nav .nav-link:focus {
   outline: none;
@@ -522,6 +525,9 @@
   }
 }
 @media (min-width: 767px) {
+  .custom-id-slider .custom-section-title .txt-title-slider {
+    width: 55%;
+  }
   .custom-id-slider .card-inner {
     padding: 3.4rem 1rem 3.6rem;
   }
