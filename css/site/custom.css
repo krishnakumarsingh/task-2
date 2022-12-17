@@ -79,6 +79,10 @@ html {
   transition: none;
   margin: 0 !important;
 }
+.custom-id-nav nav.navbar.navbar-short, .custom-id-nav nav.navbar.navbar-short--fix {
+  color: #5f9ea0 !important;
+  background: #ffffff !important;
+}
 .custom-id-nav .collapsed .custom-iconfont {
   padding-left: 0rem !important;
 }
@@ -364,6 +368,11 @@ html {
   justify-content: center;
   transition: all 0.2s ease-in-out;
   position: relative;
+}
+.custom-id-nav nav.navbar.navbar-short a.nav-link.text-white,
+.custom-id-nav nav.navbar.navbar-short--fix a.nav-link.text-white {
+  color: #5f9ea0 !important;
+  text-shadow: none;
 }
 .custom-id-nav .custom-iconfont {
   font-size: 1.5rem;
